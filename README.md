@@ -9,6 +9,8 @@ It uses API (such as Weather-Stack, Youtube, Telegram) to retrieve the current w
 - [@monirulmahim](https://github.com/monirulmahim)
 
 
+If You're a developer you can execute this easily.🥹
+
 ## Installation 🛠️
 
 Clone the project
