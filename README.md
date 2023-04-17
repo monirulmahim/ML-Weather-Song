@@ -22,7 +22,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  Python-Song-Weather
+  cd Weather_song_suggest
 ```
 
 Add Your APIs and other stuff
