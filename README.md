@@ -1,5 +1,5 @@
 
-# Song Suggestion Depends on Weather 🎵🌦️
+# Python ML Weather song suggestion With APIs (Google, Telegram, Weather-Stack) 🎵🌦️
 
 
 It uses API (such as Weather-Stack, Youtube, Telegram) to retrieve the current weather conditions for that location. Based on the weather conditions, the program selects a song from a pre-defined list of songs that are appropriate for that weather. The program outputs the name and artist and Also link of the selected song as a suggestion to the user via Telegram Bot.
