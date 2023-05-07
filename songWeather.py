@@ -1,10 +1,10 @@
 import APIs
 import subprocess
 import datetime
-import requests
-from googleapiclient.discovery import build
+
+
 import random
-import csv
+
 from importlib import import_module
 from time import sleep
 
@@ -13,7 +13,7 @@ from time import sleep
 def install(package):
     subprocess.check_call(["pip", "install", package], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-modules = ['requests', 'googleapiclient', 'csv']
+modules = ['requests', 'google-api-python-client', 'csv']
 
 for module in modules:
     try:
@@ -21,6 +21,9 @@ for module in modules:
     except ImportError:
         install(module)
 
+from googleapiclient.discovery import build
+import csv
+import requests
         
 # Weather API(Weatherstack.com)
 def weather():
@@ -150,7 +153,7 @@ def main():
         song = (f"{song_titles[choice]}:{video_urls[choice]}")
 
         # Random Time for check the weather on random time 
-        random_time = random.choice(range(5000, 7000))
+        random_time = random.choice(range(5400, 7000))
 
         # Main Messege whihch send to Telegram
         messege = f"{phrase} 🎵 Here's a song, which might match the weather\n{song}"
